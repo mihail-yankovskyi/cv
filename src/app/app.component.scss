@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wraper {
+  padding-bottom: 0.1px;
+}
+
+mat-drawer{
+  height: 100%;
+  width: 320px;
+  display: block;
+  z-index: 100;
+}
+
+.main-part {
+  justify-content: space-between;
+  font-size: 0.8rem;
+  height: 323px;
+}
+
+.contact-title {
+  color: #03a9f4;
+  margin-right: 7px;
+}
+
+.info {
+  display: flex;
+  margin: 8px 12px;
+}
+
+.email {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .87);
+}
+
+.clicked {
+  background-color: rgba(0, 0, 0, 0.0588);;
+}
+
+.closeButton {
+  background-color: #8c9eff;
+  width: 94%;
+  border-radius: 10px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.wraperCloseButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wraper-sidebar-technologies-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-technologies-header {
+  margin: 0px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dark-theme-color {
+  color: white;
+}
+
+.dark-theme-border-color {
+  background-color: rgba(91, 221, 253, 0.43);
+}
+
+::ng-deep {
+  @media (max-width: 599px) {
+    .mat-tab-label {
+      flex: 1 1;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .mat-tab-label {
+    min-width: 0px !important;
+  }
+}

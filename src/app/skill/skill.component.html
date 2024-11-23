@@ -1,0 +1,4 @@
+<mat-list-item *ngFor="let skill of skillsTransformed">
+  <span class="titleSkill">{{ skill.name }}</span>
+  <span class="level" *ngFor="let item of skill?.level"></span>
+</mat-list-item>

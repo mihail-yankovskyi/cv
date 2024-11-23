@@ -1,0 +1,7 @@
+<mat-card>
+  <h1 [ngClass]="{'dark-theme-color': darkTheme}">Skills</h1>
+  <mat-list *ngFor="let section of sections">
+    <app-section [section]="section"></app-section>
+  </mat-list>
+</mat-card>
+
