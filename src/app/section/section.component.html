@@ -1,0 +1,7 @@
+<mat-card class="section">
+  <mat-card-title
+    class="section-title"
+    [class.dark-theme-color]="darkTheme"
+  >{{ section.title }}</mat-card-title>
+  <app-skill [skills]="section.skills"></app-skill>
+</mat-card>

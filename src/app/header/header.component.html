@@ -1,0 +1,24 @@
+<div class="header" [ngClass]="{'dark-theme-color': isDarkTheme}">
+  <div class="title">
+    <h2 class="inline">Mihail Yankovskyi</h2>
+    <div class="inline header-description">Angular Developer</div>
+  </div>
+
+  <div class="wraper">
+    <button mat-icon-button class="menu-btn" [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+
+      <mat-menu class="dropdown-content" #menu="matMenu">
+        <button mat-menu-item (click)="openNav(0)">
+          <span class="mat-menu-item-name">Contacts</span>
+        </button>
+        <button mat-menu-item (click)="openNav(1)">
+          <span class="mat-menu-item-name">Technologies</span>
+        </button>
+        <button mat-menu-item (click)="toggleTheme()">
+          <span class="mat-menu-item-name">Toggle theme</span>
+        </button>
+      </mat-menu>
+    </div>
+</div>
