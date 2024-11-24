@@ -13,8 +13,7 @@ $light-theme: mat.define-light-theme((
     primary: $light-primary,
     accent: $light-accent,
     warn: $light-warn,
-  ),
-  typography: mat.define-typography-config(),
+  )
 ));
 
 $dark-primary: mat.define-palette(mat.$blue-grey-palette);
@@ -27,7 +26,6 @@ $dark-theme: mat.define-dark-theme((
     accent: $dark-accent,
     warn: $dark-warn,
   ),
-  typography: mat.define-typography-config(),
 ));
 
 .light-theme {
@@ -35,5 +33,5 @@ $dark-theme: mat.define-dark-theme((
 }
 
 .dark-theme {
-  @include mat.all-component-themes($dark-theme);
+  @include mat.all-component-colors($dark-theme);
 }

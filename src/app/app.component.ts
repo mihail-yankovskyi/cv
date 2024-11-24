@@ -1,7 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MatTabChangeEvent, MatTabGroup } from '@angular/material/tabs';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
