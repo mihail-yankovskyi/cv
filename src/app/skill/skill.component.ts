@@ -4,9 +4,10 @@ import { ISkill } from '../interfaces/ISkill';
 import { ISkillTransformed } from '../interfaces/ISkillTransformed';
 
 @Component({
-  selector: 'app-skill',
-  templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.scss']
+    selector: 'app-skill',
+    templateUrl: './skill.component.html',
+    styleUrls: ['./skill.component.scss'],
+    standalone: false
 })
 export class SkillComponent implements OnInit {
   @Input() skills!: ISkill[];
