@@ -1,32 +1,33 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { Theme } from '../enum/theme';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
-  private activeTheme: 'light-theme' | 'dark-theme' = 'light-theme';
+  private activeTheme: Theme = Theme.light;
   private theme = new BehaviorSubject<boolean>(false);
 
   currentTheme$ = this.theme.asObservable();
 
-  setTheme(theme: 'light-theme' | 'dark-theme') {
+  setTheme(theme: Theme): void {
     this.activeTheme = theme;
     document.body.classList.remove('light-theme', 'dark-theme');
     document.body.classList.add(this.activeTheme);
   }
 
-  toggleTheme(value: boolean) {
-    if (this.activeTheme === 'light-theme') {
-      this.setTheme('dark-theme');
+  toggleTheme(value: boolean): void {
+    if (this.activeTheme === Theme.light) {
+      this.setTheme(Theme.dark);
       this.theme.next(value);
     } else {
-      this.setTheme('light-theme');
+      this.setTheme(Theme.light);
       this.theme.next(value);
     }
   }
 
-  getActiveTheme() {
+  getActiveTheme(): Theme {
     return this.activeTheme;
   }
 }

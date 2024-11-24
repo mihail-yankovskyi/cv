@@ -13,8 +13,6 @@ export class SkillComponent implements OnInit {
 
   skillsTransformed!: ISkillTransformed[];
 
-  constructor() { }
-
   ngOnInit(): void {
     this.transformSkills();
   }
@@ -27,4 +25,8 @@ export class SkillComponent implements OnInit {
       }
     });
   }
+
+  trackByIndex(index: number): number {
+    return index;
+  };
 }

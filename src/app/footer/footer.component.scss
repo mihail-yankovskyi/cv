@@ -20,7 +20,7 @@ mat-card {
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
-    margin: 0px 20px 0px 20px;
+    margin: 0 20px 0 20px;
   }
 
   .contact-title {
@@ -33,10 +33,7 @@ mat-card {
   }
 }
 
-
 @media (max-width: 450px) {
-
-
   .mat-card {
     margin: 12px;
     padding: 8px;
@@ -60,7 +57,7 @@ mat-card {
       margin-bottom: 15px;
 
       .contact-title {
-        margin: 0px;
+        margin: 0;
       }
     }
   }

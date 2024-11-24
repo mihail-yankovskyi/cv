@@ -8,7 +8,7 @@ import { ThemeService } from '../services/theme.service';
   styleUrls: ['./sections.component.scss']
 })
 export class SectionsComponent implements OnInit {
-  darkTheme: boolean = false;
+  darkTheme = false;
 
   sections: ISection[] = [
     {
@@ -84,9 +84,16 @@ export class SectionsComponent implements OnInit {
   constructor(private isDarkTheme: ThemeService) { }
 
   ngOnInit(): void {
+    this.setTheme();
+  }
+
+  setTheme(): void {
     this.isDarkTheme.currentTheme$.subscribe(value => {
       this.darkTheme = value;
     })
   }
 
+  trackByIndex(index: number): number {
+    return index;
+  };
 }

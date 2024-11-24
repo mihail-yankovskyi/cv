@@ -7,15 +7,15 @@ import { ThemeService } from '../services/theme.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @Output() toggleDrawer = new EventEmitter<number>();
+  @Output() openSidenav = new EventEmitter<number>();
   @Output() isDarkThemeSend = new EventEmitter<boolean>();
 
   isDarkTheme: boolean = false;
 
   constructor(private themeService: ThemeService) { }
 
-  openDrawer(index: number) {
-    this.toggleDrawer.emit(index);
+  openNav(index: number) {
+    this.openSidenav.emit(index);
   }
 
   toggleTheme() {

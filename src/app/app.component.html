@@ -1,69 +1,86 @@
-<div class="wraper">
-  <app-header (toggleDrawer)="onToggleDrawer($event)" (isDarkThemeSend)="onChangeTheme($event)"></app-header>
-  <mat-drawer-container>
-    <mat-drawer #drawer mode="over" position="end" [autoFocus]="false">
-      <mat-tab-group mat-align-tabs="start" #tabGroup>
-          <mat-tab label="Contacts">
-            <div class="main-part">
-              <div class="info">
-                <div class="contact-title">email:</div>
-                <a
-                  class="email"
-                  href="mailto:mihail.ya777@gmail.com"
-                  [class.dark-theme-color]="isDarkTheme"
-                >mihail.ya777&#64;gmail.com</a>
-              </div>
+<mat-sidenav-container>
+  <mat-sidenav
+    #sidenav
+    mode="over"
+    position="end"
+    [autoFocus]="false"
+  >
+    <mat-tab-group
+      #tabGroup
+      mat-align-tabs="start"
+      (selectedTabChange)="onTabClicked($event)">
+      <mat-tab label="Contacts">
+        <div
+          *ngIf="selectedIndex === 0"
+          class="main-part">
+          <div class="info">
+            <div class="contact-title">email:</div>
+            <a
+              class="email"
+              href="mailto:mihail.ya777@gmail.com"
+              [class.dark-theme-color]="isDarkTheme"
+            >mihail.ya777&#64;gmail.com</a>
+          </div>
 
-              <div class="info">
-                <div class="contact-title">skype:</div>
-                <div>yank.od</div>
-              </div>
+          <div class="info">
+            <div class="contact-title">skype:</div>
+            <div>yank.od</div>
+          </div>
 
-              <div class="info">
-                <div class="contact-title">github:</div>
-                <div>mihail-yankovskyi</div>
-              </div>
+          <div class="info">
+            <div class="contact-title">github:</div>
+            <div>mihail-yankovskyi</div>
+          </div>
 
-              <div class="info">
-                <div class="contact-title">address:</div>
-                <div>Hannover, Germany</div>
-              </div>
-              <div class="wraperCloseButton">
-                <button
-                  mat-flat-button
-                  class="closeButton"
-                  [ngClass]="{'dark-theme-border-color': isDarkTheme}"
-                  (click)="drawer.close()"
-                >Close</button>
-              </div>
-            </div>
-          </mat-tab>
-          <mat-tab label="Technologies">
-            <div>
-              <div class="wraper-sidebar-technologies-header">
-                <p class="sidebar-technologies-header">Technologies used for this site</p>
-              </div>
+          <div class="info">
+            <div class="contact-title">address:</div>
+            <div>Hannover, Germany</div>
+          </div>
+          <div class="wraperCloseButton">
+            <button
+              mat-flat-button
+              class="closeButton"
+              [class.dark-theme-border-color]="isDarkTheme"
+              (click)="sidenav.close()"
+            >Close</button>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Technologies" >
+        <div *ngIf="selectedIndex === 1">
+          <div class="wraper-sidebar-technologies-header">
+            <p class="sidebar-technologies-header">Technologies used for this site</p>
+          </div>
 
-              <mat-list>
-                <mat-list-item>Angular</mat-list-item>
-                <mat-list-item>TypeScript</mat-list-item>
-                <mat-list-item>Angular Material</mat-list-item>
-                <mat-list-item>HTML</mat-list-item>
-                <mat-list-item>CSS</mat-list-item>
-              </mat-list>
+          <mat-list>
+            <mat-list-item>Angular</mat-list-item>
+            <mat-list-item>TypeScript</mat-list-item>
+            <mat-list-item>Angular Material</mat-list-item>
+            <mat-list-item>HTML</mat-list-item>
+            <mat-list-item>CSS</mat-list-item>
+          </mat-list>
 
-              <div class="wraperCloseButton">
-                <button class="closeButton" mat-flat-button (click)="drawer.close()" [ngClass]="{'dark-theme-border-color': isDarkTheme}">Close</button>
-              </div>
-            </div>
-          </mat-tab>
-      </mat-tab-group>
-    </mat-drawer>
-    <mat-drawer-content>
-      <app-summary></app-summary>
-      <app-sections></app-sections>
-      <app-footer></app-footer>
-    </mat-drawer-content>
-  </mat-drawer-container>
-</div>
+          <div class="wraperCloseButton">
+            <button
+              mat-flat-button
+              class="closeButton"
+              [class.dark-theme-border-color]="isDarkTheme"
+              (click)="sidenav.close()"
+            >Close</button>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-header
+      (openSidenav)="onOpenSidenav($event)"
+      (isDarkThemeSend)="onChangeTheme($event)"
+    ></app-header>
+    <app-summary></app-summary>
+    <app-sections></app-sections>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 

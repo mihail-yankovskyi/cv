@@ -1,6 +1,6 @@
 <mat-card>
-  <h1 [ngClass]="{'dark-theme-color': darkTheme}">Skills</h1>
-  <mat-list *ngFor="let section of sections">
+  <h1 [class.dark-theme-color]="darkTheme">Skills</h1>
+  <mat-list *ngFor="let section of sections; trackBy:trackByIndex">
     <app-section [section]="section"></app-section>
   </mat-list>
 </mat-card>
