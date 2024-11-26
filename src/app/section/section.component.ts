@@ -3,9 +3,10 @@ import { ISection } from '../interfaces/ISection';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-section',
-  templateUrl: './section.component.html',
-  styleUrls: ['./section.component.scss']
+    selector: 'app-section',
+    templateUrl: './section.component.html',
+    styleUrls: ['./section.component.scss'],
+    standalone: false
 })
 export class SectionComponent implements OnInit {
   @Input() section!: ISection;

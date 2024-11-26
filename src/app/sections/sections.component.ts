@@ -3,9 +3,10 @@ import { ISection } from '../interfaces/ISection';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-sections',
-  templateUrl: './sections.component.html',
-  styleUrls: ['./sections.component.scss']
+    selector: 'app-sections',
+    templateUrl: './sections.component.html',
+    styleUrls: ['./sections.component.scss'],
+    standalone: false
 })
 export class SectionsComponent implements OnInit {
   darkTheme = false;
