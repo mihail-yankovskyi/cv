@@ -12,6 +12,15 @@
   display: inline-block;
 }
 
+.mdc-list-item.mdc-list-item--with-one-line {
+  height: auto !important;
+}
+
+.skill-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 450px) {
   .level {
     width: 11px;

@@ -1,18 +1,20 @@
+<app-header
+(openSidenav)="onOpenSidenav($event)"
+(isDarkThemeSend)="onChangeTheme($event)"
+></app-header>
 <mat-sidenav-container>
   <mat-sidenav
     #sidenav
     mode="over"
     position="end"
-    [autoFocus]="false"
-  >
+    [autoFocus]="false">
     <mat-tab-group
       #tabGroup
       mat-align-tabs="start"
       (selectedTabChange)="onTabClicked($event)">
       <mat-tab label="Contacts">
-        <div
-          *ngIf="selectedIndex === 0"
-          class="main-part">
+        <div class="main-part">
+          <!--*ngIf="selectedIndex === 0"-->
           <div class="info">
             <div class="contact-title">email:</div>
             <a
@@ -47,7 +49,8 @@
         </div>
       </mat-tab>
       <mat-tab label="Technologies" >
-        <div *ngIf="selectedIndex === 1">
+        <div class="technologies-content">
+          <!--*ngIf="selectedIndex === 1" -->
           <div class="wraper-sidebar-technologies-header">
             <p class="sidebar-technologies-header">Technologies used for this site</p>
           </div>
@@ -74,10 +77,6 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <app-header
-      (openSidenav)="onOpenSidenav($event)"
-      (isDarkThemeSend)="onChangeTheme($event)"
-    ></app-header>
     <app-summary></app-summary>
     <app-sections></app-sections>
     <app-footer></app-footer>
