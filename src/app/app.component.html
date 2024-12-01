@@ -1,6 +1,6 @@
 <app-header
-(openSidenav)="onOpenSidenav($event)"
-(isDarkThemeSend)="onChangeTheme($event)"
+  (openSidenav)="onOpenSidenav($event)"
+  (isDarkThemeSend)="onChangeTheme($event)"
 ></app-header>
 <mat-sidenav-container>
   <mat-sidenav
@@ -14,7 +14,6 @@
       (selectedTabChange)="onTabClicked($event)">
       <mat-tab label="Contacts">
         <div class="main-part">
-          <!--*ngIf="selectedIndex === 0"-->
           <div class="info">
             <div class="contact-title">email:</div>
             <a
@@ -50,7 +49,6 @@
       </mat-tab>
       <mat-tab label="Technologies" >
         <div class="technologies-content">
-          <!--*ngIf="selectedIndex === 1" -->
           <div class="wraper-sidebar-technologies-header">
             <p class="sidebar-technologies-header">Technologies used for this site</p>
           </div>
