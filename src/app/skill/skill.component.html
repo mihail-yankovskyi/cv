@@ -1,4 +1,6 @@
 <mat-list-item *ngFor="let skill of skillsTransformed; trackBy:trackByIndex">
-  <span class="titleSkill">{{ skill.name }}</span>
-  <span class="level" *ngFor="let item of skill?.level; trackBy:trackByIndex"></span>
+  <div class="skill-wrapper">
+    <span class="titleSkill">{{ skill.name }}</span>
+    <span class="level" *ngFor="let item of skill?.level; trackBy:trackByIndex"></span>
+  </div>
 </mat-list-item>

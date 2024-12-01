@@ -11,17 +11,22 @@ html, body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-mat-drawer {
+mat-tab-group {
   height: 100%;
   width: 320px;
   display: block;
   z-index: 100;
 }
 
+::ng-deep .mdc-tab {
+  flex: 1 1 50% !important;
+}
+
 .main-part {
   justify-content: space-between;
   font-size: 0.8rem;
-  height: 323px;
+  height: 343px;
+  margin-top: 15px;
 }
 
 .contact-title {
@@ -44,7 +49,7 @@ mat-drawer {
 }
 
 .closeButton {
-  background-color: #8c9eff;
+  background-color: #8c9eff !important;
   width: 94%;
   border-radius: 10px;
   font-weight: 400;
@@ -55,6 +60,14 @@ mat-drawer {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.technologies-content {
+  height: 358px !important;
+}
+
+.mat-mdc-list {
+  padding-bottom: 0;
 }
 
 .wraper-sidebar-technologies-header {
@@ -75,7 +88,7 @@ mat-drawer {
 }
 
 .dark-theme-border-color {
-  background-color: rgba(91, 221, 253, 0.43);
+  background-color: rgba(91, 221, 253, 0.43) !important;
 }
 
 ::ng-deep {
