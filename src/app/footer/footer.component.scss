@@ -35,13 +35,14 @@ mat-card {
 }
 
 @media (max-width: 450px) {
-  .mat-card {
+  mat-card {
     margin: 12px;
     padding: 8px;
 
     h1 {
       font-size: 20px !important;
-      margin-bottom: 14px;
+      margin-top: 8px;
+      margin-bottom: 18px;
     }
 
     .main-part-footer {
