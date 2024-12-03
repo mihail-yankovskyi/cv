@@ -34,7 +34,36 @@
   background-color: #c2185b;
 }
 
-@media (max-width: 450px) {
+  @media all and (min-width: 390px) and (max-width: 429px) {
+  .header {
+    .title {
+      .inline {
+        display: block;
+      }
+
+      .inline {
+        font-size: 27px;
+      }
+
+      .header-description {
+        font-size: large;
+        margin-left: 15px;
+      }
+    }
+
+    .wraper {
+      .menu-btn mat-icon {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .mat-menu-item-name {
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 430px) and (max-width: 450px) {
   .header {
     .title {
       .inline {

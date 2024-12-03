@@ -36,7 +36,45 @@
   padding: 0;
 }
 
-@media (max-width: 450px) {
+@media all and (min-width: 390px) and (max-width: 429px) {
+  .mat-card {
+    display: block !important;
+    margin: 12px;
+
+    .wraper-photo {
+      display: flex;
+      width: 100%;
+
+      .photo {
+        height: 153px;
+        width: 153px;
+        margin: 10px auto;
+      }
+    }
+
+    .mat-card-content {
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0px;
+
+      .summary-title {
+        margin-bottom: 10px;
+        margin-top: 16px;
+      }
+
+      .summary {
+        text-align: center;
+        margin: 0;
+        padding: 0 36px 20px 36px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 430px) and (max-width: 450px) {
   .mat-card {
     display: block !important;
     margin: 12px;

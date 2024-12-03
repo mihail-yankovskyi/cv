@@ -19,13 +19,42 @@ mat-card {
   color: #8c9eff !important;
 }
 
-@media (max-width: 450px) {
+@media all and (min-width: 390px) and (max-width: 429px) {
+  mat-card {
+    padding: 14px;
+    margin: 12px;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+::ng-deep {
+  @media (min-width: 390px) and (max-width: 429px) {
+    .section[_ngcontent-ng-c2512393170] .section-title[_ngcontent-ng-c2512393170] {
+        font-size: 20px !important;
+        margin: 2px 0 6px 0 !important;
+    }
+  }
+}
+
+@media all and (min-width: 430px) and (max-width: 450px) {
   mat-card {
     padding: 16px;
     margin: 12px;
 
     h1 {
       font-size: 26px;
+    }
+  }
+}
+
+::ng-deep {
+  @media (min-width: 430px) and (max-width: 450px) {
+    .section[_ngcontent-ng-c2512393170] .section-title[_ngcontent-ng-c2512393170] {
+        font-size: 20px !important;
+        margin: 4px 0 9px 0 !important;
     }
   }
 }

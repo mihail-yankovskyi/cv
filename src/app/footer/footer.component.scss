@@ -34,7 +34,7 @@ mat-card {
   }
 }
 
-@media (max-width: 450px) {
+@media all and (min-width: 430px) and (max-width: 450px) {
   mat-card {
     margin: 12px;
     padding: 8px;
