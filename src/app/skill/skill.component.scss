@@ -21,7 +21,29 @@
   align-items: center;
 }
 
-@media (max-width: 450px) {
+@media all and (min-width: 390px) and (max-width: 429px) {
+  .skill-wrapper {
+    margin: 5px 0;
+  }
+
+  .level {
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+  }
+
+  .titleSkill {
+    font-size: 13px;
+    width: 28%;
+  }
+
+  .mdc-list-item {
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+  }
+}
+
+@media all and (min-width: 430px) and (max-width: 450px) {
   .skill-wrapper {
     margin: 5px 0;
   }

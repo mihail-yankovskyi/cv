@@ -17,7 +17,19 @@
   color: #8c9eff !important;
 }
 
-@media (max-width: 450px) {
+@media all and (min-width: 390px) and (max-width: 429px) {
+  .section {
+    padding: 8px;
+    margin: 2px;
+
+    .section-title {
+      font-size: 20px !important;
+      margin: 8px 0px 18px 0px;
+    }
+  }
+}
+
+@media all and (min-width: 430px) and (max-width: 450px) {
   .section {
     padding: 8px;
     margin: 2px;
