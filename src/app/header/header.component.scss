@@ -34,14 +34,11 @@
   background-color: #c2185b;
 }
 
-  @media all and (min-width: 390px) and (max-width: 429px) {
+  @media all and (min-width: 1px) and (max-width: 429px) {
   .header {
     .title {
       .inline {
         display: block;
-      }
-
-      .inline {
         font-size: 27px;
       }
 
@@ -63,14 +60,11 @@
   }
 }
 
-@media all and (min-width: 430px) and (max-width: 450px) {
+@media all and (min-width: 430px) and (max-width: 500px) {
   .header {
     .title {
       .inline {
         display: block;
-      }
-
-      .inline {
         font-size: x-large;
       }
 
@@ -91,8 +85,6 @@
     font-size: 16px;
   }
 }
-
-
 
 
 

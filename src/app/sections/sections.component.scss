@@ -19,7 +19,7 @@ mat-card {
   color: #8c9eff !important;
 }
 
-@media all and (min-width: 390px) and (max-width: 429px) {
+@media all and (min-width: 1px) and (max-width: 429px) {
   mat-card {
     padding: 14px;
     margin: 12px;
@@ -39,7 +39,7 @@ mat-card {
   }
 }
 
-@media all and (min-width: 430px) and (max-width: 450px) {
+@media all and (min-width: 430px) and (max-width: 500px) {
   mat-card {
     padding: 16px;
     margin: 12px;
@@ -56,5 +56,11 @@ mat-card {
         font-size: 20px !important;
         margin: 4px 0 9px 0 !important;
     }
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 1024px) {
+  h1 {
+    font-size: 29px !important;
   }
 }
