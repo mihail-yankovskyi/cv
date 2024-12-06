@@ -10,6 +10,7 @@
 .titleSkill {
   width: 16.6%;
   display: inline-block;
+  white-space: normal;
 }
 
 .mdc-list-item.mdc-list-item--with-one-line {
@@ -21,7 +22,7 @@
   align-items: center;
 }
 
-@media all and (min-width: 390px) and (max-width: 429px) {
+@media all and (min-width: 1px) and (max-width: 429px) {
   .skill-wrapper {
     margin: 5px 0;
   }
@@ -33,8 +34,9 @@
   }
 
   .titleSkill {
-    font-size: 13px;
+    font-size: 14px;
     width: 28%;
+    line-height: 1.5;
   }
 
   .mdc-list-item {
@@ -43,7 +45,7 @@
   }
 }
 
-@media all and (min-width: 430px) and (max-width: 450px) {
+@media all and (min-width: 430px) and (max-width: 500px) {
   .skill-wrapper {
     margin: 5px 0;
   }
@@ -56,6 +58,28 @@
 
   .titleSkill {
     font-size: 15px;
-    width: 28%;
+    width: 32%;
+  }
+
+  .mdc-list-item {
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 1024px) {
+  .level {
+    width: 15px;
+    height: 15px;
+    margin: 14px
+  }
+
+  .titleSkill {
+    width: 25%;
+  }
+
+  .mdc-list-item {
+    padding-left: 12px !important;
+    padding-right: 5px !important;
   }
 }
