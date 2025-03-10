@@ -17,6 +17,15 @@ mat-card {
     margin-bottom: 24px;
   }
 
+  a {
+    color: black;
+  }
+
+  .email {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+  }
+
   .main-part-footer {
     display: flex;
     justify-content: space-between;

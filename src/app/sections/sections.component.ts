@@ -82,14 +82,14 @@ export class SectionsComponent implements OnInit {
     }
   ];
 
-  constructor(private isDarkTheme: ThemeService) { }
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
     this.setTheme();
   }
 
   setTheme(): void {
-    this.isDarkTheme.currentTheme$.subscribe(value => {
+    this.themeService.currentTheme$.subscribe(value => {
       this.darkTheme = value;
     })
   }

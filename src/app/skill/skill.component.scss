@@ -22,7 +22,30 @@
   align-items: center;
 }
 
-@media all and (min-width: 1px) and (max-width: 429px) {
+@media all and (min-width: 1px) and (max-width: 412px) {
+  .skill-wrapper {
+    margin: 5px 0;
+  }
+
+  .level {
+    width: 9px;
+    height: 9px;
+    margin: 5px;
+  }
+
+  .titleSkill {
+    font-size: 13px;
+    width: 28%;
+    line-height: 1.5;
+  }
+
+  .mdc-list-item {
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+  }
+}
+
+@media all and (min-width: 413px) and (max-width: 429px) {
   .skill-wrapper {
     margin: 5px 0;
   }

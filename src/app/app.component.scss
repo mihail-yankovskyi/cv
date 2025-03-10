@@ -18,6 +18,10 @@ mat-tab-group {
   z-index: 100;
 }
 
+a {
+  color: black;
+}
+
 ::ng-deep .mdc-tab {
   flex: 1 1 50% !important;
 }
