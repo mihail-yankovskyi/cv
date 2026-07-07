@@ -20,6 +20,21 @@ mat-tab-group {
 
 a {
   color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+a:hover {
+  border-bottom: 2px solid #03a9f4;
+}
+
+:host-context(.dark-theme) a {
+  color: #ffffff;
+  border-bottom: 2px solid #424242;
+}
+
+:host-context(.dark-theme) a:hover {
+  border-bottom: 2px solid rgba(91, 221, 253, 0.43);
 }
 
 ::ng-deep .mdc-tab {

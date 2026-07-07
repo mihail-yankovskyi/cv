@@ -15,34 +15,41 @@ export class SectionsComponent implements OnInit {
     {
       title: 'Languages',
       skills: [
-        { name: 'JavaScript', level: 8 },
-        { name: 'TypeScript', level: 8 },
-        { name: 'HTML', level: 9 },
-        { name: 'CSS', level: 9 },
+        { name: 'TypeScript', level: 10 },
+        { name: 'JavaScript', level: 10 },
+        { name: 'HTML', level: 10 },
+        { name: 'CSS', level: 10 },
         { name: 'Python', level: 6 },
         { name: 'Java', level: 6 },
-        { name: 'C++', level: 5 },
-        { name: 'C#', level: 3 }
+        { name: 'C#', level: 5 },
+        { name: 'C++', level: 5 }
       ]
     },
     {
       title: 'Frameworks',
       skills: [
-        { name: 'Angular', level: 8 }
+        { name: 'Angular', level: 10 },
+      ]
+    },
+    {
+      title: 'API architectures',
+      skills: [
+        { name: 'REST API', level: 10 },
+        { name: 'GraphQL', level: 9 }
       ]
     },
     {
       title: 'Libraries',
       skills: [
-        { name: 'RxJS', level: 7 },
-        { name: 'NgRx', level: 7 }
+        { name: 'RxJS', level: 9 },
+        { name: 'NgRx', level: 8 }
       ]
     },
     {
       title: 'UI Frameworks',
       skills: [
-        { name: 'Bootstrap', level: 7 },
-        { name: 'Angular Material', level: 7 }
+        { name: 'Angular Material', level: 8 },
+        { name: 'Bootstrap', level: 7 }
       ]
     },
     {
@@ -55,11 +62,19 @@ export class SectionsComponent implements OnInit {
     {
       title: 'Development Tools',
       skills: [
+        { name: 'Git', level: 10 },
         { name: 'Angular CLI', level: 10 },
         { name: 'Npm', level: 10 },
-        { name: 'Git', level: 8 },
-        { name: 'SASS', level: 9 },
-        { name: 'SCSS', level: 9 }
+        { name: 'SCSS', level: 10 },
+        { name: 'SASS', level: 9 }
+      ]
+    },
+    {
+      title: 'AI tools',
+      skills: [
+        { name: 'Claude Code', level: 10 },
+        { name: 'Copilot', level: 9 },
+        { name: 'ChatGPT Codex', level: 8 }
       ]
     },
     {
@@ -73,11 +88,11 @@ export class SectionsComponent implements OnInit {
     {
       title: 'Speaking Languages',
       skills: [
-        { name: 'English', level: 9 },
-        { name: 'German', level: 5 },
-        { name: 'Latvian', level: 3 },
+        { name: 'English', level: 10 },
         { name: 'Ukrainian', level: 10 },
-        { name: 'Russian', level: 10 }
+        { name: 'Russian', level: 10 },
+        { name: 'German', level: 5 },
+        { name: 'Latvian', level: 3 }
       ]
     }
   ];
