@@ -16,12 +16,12 @@ export class SectionsComponent implements OnInit {
       title: 'Languages',
       skills: [
         { name: 'TypeScript', level: 10 },
+        { name: 'C#', level: 10 },
         { name: 'JavaScript', level: 10 },
         { name: 'HTML', level: 10 },
         { name: 'CSS', level: 10 },
         { name: 'Python', level: 6 },
         { name: 'Java', level: 6 },
-        { name: 'C#', level: 5 },
         { name: 'C++', level: 5 }
       ]
     },
@@ -29,6 +29,15 @@ export class SectionsComponent implements OnInit {
       title: 'Frameworks',
       skills: [
         { name: 'Angular', level: 10 },
+        { name: '.NET', level: 10 },
+        { name: 'ASP.NET Core', level: 10 },
+        { name: 'Entity Framework Core', level: 7 }
+      ]
+    },
+    {
+      title: 'Cloud',
+      skills: [
+        { name: 'Azure', level: 7 }
       ]
     },
     {
@@ -55,7 +64,8 @@ export class SectionsComponent implements OnInit {
     {
       title: 'Databases',
       skills: [
-        { name: 'MySQL', level: 4 },
+        { name: 'SQL Server', level: 8 },
+        { name: 'MySQL', level: 5 },
         { name: 'H2', level: 4 }
       ]
     },
